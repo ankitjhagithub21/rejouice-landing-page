@@ -41,7 +41,7 @@ function page1Animation() {
         scroller:"#main",
         trigger: '#page1 h1',
         start:"bottom bottom",
-        markers:true
+        
     }
   })
   page1.addEventListener('mouseenter', () => {
