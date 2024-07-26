@@ -66,7 +66,7 @@ html,body{
 .line{
     height: 1px;
     background-color: black;
-    margin-top: 10px;
+    margin: 10px 0px;
     width: 0%;
 }
 .upper{

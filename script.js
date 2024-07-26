@@ -5,7 +5,7 @@ function page2Animation() {
         trigger: '#page2',
         start: 'top center',
         onEnter: () => {
-            gsap.set('.line', { width: '0%' }); // Reset the width before animation
+            gsap.set('.line', { width: '0%' }); 
             gsap.from('#page2 h1', {
                 y: 100,
                 duration: 0.5,
