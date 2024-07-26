@@ -107,6 +107,7 @@ color: rgb(14,14,14);
 }
 #page3 .work{
     width: 30%;
+    cursor: pointer;
 }
 #page3 .work video{
     width: 100%;

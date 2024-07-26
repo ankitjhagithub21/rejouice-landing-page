@@ -102,3 +102,22 @@ function page2Animation() {
 }
 
 page2Animation();
+
+
+function page3Animation(){
+    document.querySelectorAll('.work video').forEach(video => {
+        video.addEventListener('mouseenter', () => {
+          
+            video.play();
+            
+        });
+
+        video.addEventListener('mouseleave', () => {
+           
+            video.pause();
+            video.currentTime = 0;
+        });
+    });
+}   
+
+page3Animation()
