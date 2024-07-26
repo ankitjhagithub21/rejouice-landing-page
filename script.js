@@ -32,6 +32,18 @@ smoothScroll()
 // Define your page animations
 function page1Animation() {
   const page1 = document.getElementById('page1');
+  gsap.from("#page1 h1",{
+   opacity:0,
+    y:100,
+    duration:1,
+    
+    scrollTrigger:{
+        scroller:"#main",
+        trigger: '#page1 h1',
+        start:"bottom bottom",
+        markers:true
+    }
+  })
   page1.addEventListener('mouseenter', () => {
     gsap.to('#crsr', {
       scale: 1,
@@ -50,6 +62,7 @@ function page1Animation() {
       opacity: 0,
     });
   });
+ 
 }
 page1Animation();
 
