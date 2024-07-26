@@ -1,6 +1,31 @@
-gsap.registerPlugin(ScrollTrigger);
+function page1Animation(){
+    const page1 = document.getElementById('page1')
+    page1.addEventListener('mouseenter',()=>{
+        gsap.to('#crsr',{
+            scale:1,
+            opacity:1,
+           
+        })
+    })
+    page1.addEventListener('mousemove',(dets)=>{
+        gsap.to('#crsr',{
+           
+            left:dets.x-75,
+            top:dets.y-75,
+        })
+    })
+    page1.addEventListener('mouseleave',()=>{
+        gsap.to('#crsr',{
+            scale:0,
+            opacity:0,
+            
+        })
+    })
+}
+page1Animation()
 
 function page2Animation() {
+    gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
         trigger: '#page2',
         start: 'top center',
@@ -46,5 +71,8 @@ function page2Animation() {
         }
     });
 }
-
 page2Animation();
+
+
+
+
