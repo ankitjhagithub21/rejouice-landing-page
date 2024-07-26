@@ -13,16 +13,29 @@ html,body{
     position: relative;
     
 }
+#intro{
+   
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   
+}
 #page1{
     min-height: 100vh;
     width: 100%;
     position: relative;
+    
 
 }
 #page1 video{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+    
 }
 #page2{
     min-height: 100vh;
@@ -69,7 +82,15 @@ font-weight: 400;
 color: rgb(14,14,14);
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
+    #page1{
+       min-height: fit-content;
+
+    }
+    #page2{
+        min-height: fit-content;
+        padding: 5vh 2vw;
+    }
     #page2 span{
         font-size: 20px;
     }

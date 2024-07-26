@@ -1,4 +1,3 @@
-
 gsap.registerPlugin(ScrollTrigger);
 
 function page2Animation() {
@@ -6,6 +5,7 @@ function page2Animation() {
         trigger: '#page2',
         start: 'top center',
         onEnter: () => {
+            gsap.set('.line', { width: '0%' }); // Reset the width before animation
             gsap.from('#page2 h1', {
                 y: 100,
                 duration: 0.5,
@@ -25,6 +25,7 @@ function page2Animation() {
             });
         },
         onEnterBack: () => {
+            gsap.set('.line', { width: '0%' }); // Reset the width before animation
             gsap.from('#page2 h1', {
                 y: 100,
                 duration: 0.5,
@@ -45,6 +46,5 @@ function page2Animation() {
         }
     });
 }
-
 
 page2Animation();
