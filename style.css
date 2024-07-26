@@ -113,6 +113,9 @@ color: rgb(14,14,14);
     width: 100%;
     height: 100%;
 }
+.video-upper{
+    padding: 0 2vw;
+}
 @media (max-width:768px) {
     #page1{
        min-height: fit-content;
